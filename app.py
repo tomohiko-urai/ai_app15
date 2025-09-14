@@ -39,8 +39,8 @@ elif img_source == "カメラで撮影":
 #with col2:
 
 #input 
-a = st.num_ber_input('粒最大横径')
-b = st.num_ber_input('販売単価円/ｇ')                     
+a = st.number_input('粒最大横径')
+b = st.number_input('販売単価円/ｇ')                     
 try:
  if img_file is not None:
     with st.spinner("推定中..."):
