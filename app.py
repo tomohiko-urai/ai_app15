@@ -37,6 +37,10 @@ elif img_source == "カメラで撮影":
     img_file = st.camera_input("カメラで撮影")
 
 #with col2:
+
+#input 
+a = st.num_ber_input('粒最大横径')
+b = st.num_ber_input('販売単価円/ｇ')                     
 try:
  if img_file is not None:
     with st.spinner("推定中..."):
@@ -86,7 +90,10 @@ try:
         evaluation = "{:.2f}".format((shine1 + shine2 + shine3 + shine4 + shine5)/total )
         st.write("## 粒の数:" , total)
         st.write("## 収穫判定:" ,evaluation ) 
-        #st.write("## 収穫判定:" ,(shine1 + shine2 + shine3 + shine4 + shine5)/total ) 
+        st.write("## 1房金額：”, math.floor(total * (1.4707 * a -25.044)))      
+
+
+#st.write("## 収穫判定:" ,(shine1 + shine2 + shine3 + shine4 + shine5)/total ) 
 except AttributeError:
  st.error("エラー：判定出来ませんでした")  
  #st.write("エラー：判定出来ませんでした")   
