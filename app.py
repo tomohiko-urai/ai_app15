@@ -21,8 +21,8 @@ image_size = 50
 
 st.set_option("deprecation.showfileUploaderEncoding", False)
 
-st.sidebar.title("シャインマスカット房粒数カウント、収穫時期判定アプリ-ai-app15")
-st.sidebar.write("画像認識モデルを使ってシャインマスカットの房粒数カウント、収穫時期の判定をします。")
+st.sidebar.title("シャインマスカット房粒数カウント、収穫時期判定,アプリ-ai-app15")
+st.sidebar.write("画像認識モデルを使ってシャインマスカットの房粒数カウント、金額、収穫時期の判定をします。")
 
 st.sidebar.write("")
 col1,col2 = st.columns(2)
@@ -88,7 +88,7 @@ try:
         total =len(shinemuscat1) + len(shinemuscat2) + len(shinemuscat3) + len(shinemuscat4) + len(shinemuscat5)
         #evaluation = math.floor((shine1 + shine2 + shine3 + shine4 + shine5)/total )
         evaluation = "{:.2f}".format((shine1 + shine2 + shine3 + shine4 + shine5)/total )
-        price =   "{:.2f}".format((total * (1.4707 * a -25.044) * b ))
+        price =   "{:.2f}".format((total * (1.4707 * a -25.044) * b )/100)
         st.write("## 粒の数:" , total)
         st.write("## 収穫判定:" ,evaluation )
         st.write("## 1房金額:" ,price )
