@@ -90,10 +90,9 @@ try:
         evaluation = "{:.2f}".format((shine1 + shine2 + shine3 + shine4 + shine5)/total )
         price =   "{:.2f}".format((total * (1.4707 * a -25.044) * b )/100)
         st.write("## 粒の数:" , total)
-        st.write("## 収穫判定:" ,evaluation ) 
-        st.write("## 1房金額：” , price )      
-
-
+        st.write("## 収穫判定:" ,evaluation )
+        st.write("## 1房金額:" ,price )
+        
 #st.write("## 収穫判定:" ,(shine1 + shine2 + shine3 + shine4 + shine5)/total ) 
 except AttributeError:
  st.error("エラー：判定出来ませんでした")  
