@@ -90,7 +90,7 @@ try:
         evaluation = "{:.2f}".format((shine1 + shine2 + shine3 + shine4 + shine5)/total )
         #price =   "{:.2f}".format((total * (1.4707 * a -25.044) * b )/100)
       　price =   "{:.2f}".format((total * (1.0314 * a -13.8808) * b )/100)
-        weghit = "{:.2f}".format((total * b ))
+        weghit = "{:.2f}".format((total * (1.0314 * a -13.8808)))
         st.write("## 粒の数:" , total)
         st.write("## 1房重量（ｇ）:" , weghit)
         st.write("## 収穫判定:" ,evaluation )
