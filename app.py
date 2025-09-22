@@ -88,8 +88,11 @@ try:
         total =len(shinemuscat1) + len(shinemuscat2) + len(shinemuscat3) + len(shinemuscat4) + len(shinemuscat5)
         #evaluation = math.floor((shine1 + shine2 + shine3 + shine4 + shine5)/total )
         evaluation = "{:.2f}".format((shine1 + shine2 + shine3 + shine4 + shine5)/total )
-        price =   "{:.2f}".format((total * (1.4707 * a -25.044) * b )/100)
+        #price =   "{:.2f}".format((total * (1.4707 * a -25.044) * b )/100)
+        price =   "{:.2f}".format((total * (1.0314 * a -13.8808) * b )/100)
+        weight =   "{:.2f}".format((total * (1.0314 * a -13.8808))) 
         st.write("## 粒の数:" , total)
+        st.write("## １房重量（ｇ）:" , total)
         st.write("## 収穫判定:" ,evaluation )
         st.write("## 1房金額(円）:" ,price )
         
