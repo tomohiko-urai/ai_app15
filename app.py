@@ -92,7 +92,7 @@ try:
         price =   "{:.2f}".format((total * (1.0314 * a -13.8808) * b )/100)
         weight =   "{:.2f}".format((total * (1.0314 * a -13.8808))) 
         st.write("## 粒の数:" , total)
-        st.write("## １房重量（ｇ）:" , total)
+        st.write("## １房重量（ｇ）:" , weight)
         st.write("## 収穫判定:" ,evaluation )
         st.write("## 1房金額(円）:" ,price )
         
