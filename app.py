@@ -88,10 +88,13 @@ try:
         total =len(shinemuscat1) + len(shinemuscat2) + len(shinemuscat3) + len(shinemuscat4) + len(shinemuscat5)
         #evaluation = math.floor((shine1 + shine2 + shine3 + shine4 + shine5)/total )
         evaluation = "{:.2f}".format((shine1 + shine2 + shine3 + shine4 + shine5)/total )
-        price =   "{:.2f}".format((total * (1.4707 * a -25.044) * b )/100)
+        #price =   "{:.2f}".format((total * (1.4707 * a -25.044) * b )/100)
+      　price =   "{:.2f}".format((total * (1.0314 * a -13.8808) * b )/100)
+        weghit = "{:.2f}".format((total * b ))
         st.write("## 粒の数:" , total)
+        st.write("## 1房重量（ｇ）:" , weghit)
         st.write("## 収穫判定:" ,evaluation )
-        st.write("## 1房金額:" ,price )
+        st.write("## 1房金額(円）:" ,price )
         
 #st.write("## 収穫判定:" ,(shine1 + shine2 + shine3 + shine4 + shine5)/total ) 
 except AttributeError:
